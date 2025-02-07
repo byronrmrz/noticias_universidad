@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ejercicioNoticias.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="946"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="noticias" custom_title="0" dock_id="1" table="4,8:mainnoticias"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000010100ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE noticias (
+    id        INTEGER PRIMARY KEY NOT NULL,
+    titulo    TEXT    NOT NULL,
+    autor     TEXT,
+    fecha     TEXT    NOT NULL,
+    tema      TEXT,
+    contenido TEXT    NOT NULL,
+    favorito  INTEGER DEFAULT 0
+);
+
+INSERT INTO noticias (titulo, autor, fecha, tema, contenido, favorito)
+VALUES
+(&quot;Marco Domínguez jugará con los cremas en el 2025&quot;, &quot;Prensa Libre&quot;, &quot;04/12/2024&quot;, &quot;Deportes&quot;, &quot;Marco Domínguez, uno de los jugadores más destacados del fútbol guatemalteco, ha firmado contrato con el Club Comunicaciones para el año 2025, lo que aumenta las expectativas de los fanáticos del equipo.&quot;, 0),
+(&quot;Guatemala derrota a Venezuela en los Juegos Bolivarianos&quot;, &quot;Prensa Libre&quot;, &quot;03/12/2024&quot;, &quot;Deportes&quot;, &quot;La selección de fútbol de Guatemala comenzó con victoria en los Juegos Bolivarianos de Ayacucho, derrotando a Venezuela con un marcador 2-1, en un partido emocionante.&quot;, 0),
+(&quot;Nueva Ley para la Inversión Extranjera en Guatemala&quot;, &quot;Miguel Jiménez&quot;, &quot;02/12/2024&quot;, &quot;Política&quot;, &quot;El gobierno de Guatemala ha aprobado una nueva ley para incentivar la inversión extranjera, con la esperanza de generar más empleo y dinamizar la economía del país.&quot;, 0),
+(&quot;Cantante guatemalteca presenta su nuevo álbum&quot;, &quot;El Diario&quot;, &quot;01/12/2024&quot;, &quot;Farándula&quot;, &quot;La cantante guatemalteca María López ha lanzado su esperado álbum titulado 'Renacer', que ya está disponible en todas las plataformas digitales. El álbum ha sido bien recibido por la crítica.&quot;, 0),
+(&quot;Musk y Ramaswamy abogan por recortes en el Congreso&quot;, &quot;Miguel Jiménez&quot;, &quot;12/02/2024&quot;, &quot;Internacionales&quot;, &quot;Ambos multimillonarios, elegidos por Trump para dirigir un nuevo departamento que supuestamente busque la eficiencia gubernamental, visitan el Capitolio para atraer a legisladores republicanos hacia sus posiciones.&quot;, 0);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
