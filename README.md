@@ -14,8 +14,3 @@ Este es un proyecto desarrollado en Java utilizando IntelliJ IDEA. La aplicació
 - **Java**: Se recomienda usar Java 11 o superior.
 - **IDE**: Este proyecto fue desarrollado utilizando IntelliJ IDEA.
 
-## Instalación
-
-1. Clona el repositorio a tu máquina local:
-   ```bash
-   git clone <URL-del-repositorio>
